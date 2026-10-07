@@ -1,0 +1,15 @@
+* Synchronous buck (battery->12 V) LTspice netlist — analytical cross-check
+* Power stage only; control loop not modeled here (use HIL for closed loop).
+Vin 1 0 dc 48
+S1 1 2 3 0 SW
+S2 0 2 4 0 SW_LO
+L1 2 5 22u
+C1 5 0 470u ESR=5m
+Rload 5 0 1.44
+E1 3 0 7 0 5
+E2 4 0 8 0 5
+Vpwm 7 0 PULSE(0 5 0 10n 10n {0.25*T} {T})
+Vpwml 8 0 PULSE(0 5 0 10n 10n {0.75*T} {T})
+.param T=10u
+.tran 0 5m 3m 1n uic
+.end

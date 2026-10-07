@@ -1,0 +1,20 @@
+Ref,Qty,Value,Footprint,Part/Description,Status
+Q1,1,N-MOSFET 100V 5mΩ,TO-263-7,High-side sync MOSFET,SELECTED (parametric)
+Q2,1,N-MOSFET 100V 5mΩ,TO-263-7,Low-side sync MOSFET,SELECTED (parametric)
+U1,1,Half-bridge gate driver,SOIC-8,Low-side/high-side driver with 200ns deadtime,SELECTED (parametric)
+U2,1,STM32G474RE,LQFP-64,MCU with HRTIM/ADC,SELECTED
+U3,1,INA240A1,SOT-23-8,Current-sense amp gain 20,SELECTED
+L1,1,22µH 25A,Shielded drum,Power inductor,SELECTED (parametric)
+C1,1,220µF 100V,Electrolytic/polymer 1210,48V bulk cap,SELECTED (parametric)
+C2,1,470µF 25V,Polymer,12V bulk cap,SELECTED (parametric)
+C3,4,100nF 100V X7R,0805,High-side decoupling,SELECTED
+C4,4,100nF 25V X7R,0805,Low-side decoupling,SELECTED
+R1,1,10k,0805,Voltage divider high leg,SELECTED
+R2,1,10k/~,0805,Voltage divider low leg,SELECTED
+R3,1,1mΩ 1%,2512,Current sense shunt,SELECTED
+R4,1,10k,0805,NTC bias,SELECTED
+RT1,1,100k NTC,0805,Temperature sensor,SELECTED
+J1,1,Screw terminal 2P,5.08mm,Battery port,SELECTED
+J2,1,Screw terminal 2P,5.08mm,12V bus port,SELECTED
+J3,1,Pin header SWD,2.54mm,Programming,SELECTED
+TP1..TP6,6,Test point,SMD TP,V48/V12/SW/IL/Temp/GND,SELECTED
